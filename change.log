@@ -1,0 +1,22 @@
+## 2018.11.05
+    # Add new configuration
+        1. configs/e2e_faster_rcnn_msnet75.yaml
+        2. lib/core/config.py
+    # Change the image normalization
+        1. lib/roi_data/minibatch.py
+        2. lib/roi_data/loader.py
+        3. lib/utils/blob.py
+    # Add DetMsNet
+        1. lib/modeling/DetMsNet.py
+        2. lib/modeling/model_builder.py
+    # Add zipreader
+        1. lib/roi_data/minibatch.py
+        2. lib/roi_data/zipreader.py
+    # Change data_dir
+        1. configs/*
+        2. lib/datasets/json_dataset.py
+    # Change cache_path
+        1. lib/datasets/json_dataset.py
+    # Mask some assertion
+        1. lib/datasets/json_dataset.py, 60, IM_DIR assert
+        2. lib/datasets/json_dataset.py, 185, im_path assert
